@@ -1,0 +1,33 @@
+<div class="container">
+  <nav class="md-toolbar-tools">
+    <h1 class="md-flex">Seja bem-vindo ao leilão eletrônico!</h1>
+  </nav>
+  <article class="content-article">
+    <div [ngClass] = "errorType != 0 ? 'error-message' : ''">{{errorMessage}}</div>
+    <section class="form-section">
+      <div class="name-form">
+        <mat-label>Digite o seu Nome</mat-label>
+        <mat-form-field class="input-name-form" appearance="fill">
+          <input #name (keyup.enter)="validatorName(name.value)" matInput placeholder="Nome" maxlength="100" required>
+        </mat-form-field>
+      </div>
+    </section>
+
+    <section class="button-section">
+      <a href="/offer-product" *ngIf="isNameValid && errorType == 0 else fakeButton1">
+        <button mat-stroked-button color="primary">Ofertar Produto</button>
+      </a>
+      <ng-template #fakeButton1>
+        <button mat-stroked-button color="primary" (click)="validatorName(name.value)">Ofertar Produto</button>
+      </ng-template>
+
+      <a href="/bids" *ngIf="isNameValid && errorType == 0 else fakeButton2">
+        <button mat-stroked-button color="primary">Dar Lances</button>
+      </a>
+      <ng-template #fakeButton2>
+        <button mat-stroked-button color="primary" (click)="validatorName(name.value)">Dar Lances</button>
+      </ng-template>
+
+    </section>
+  </article>
+</div>

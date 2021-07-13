@@ -1,0 +1,60 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+
+  nav {
+    h1 {
+      font-weight: 600;
+      font-size: 5vw;
+    }
+  }
+
+  .content-article {
+    margin-top: 150px;
+
+    .form-section {
+      .name-form {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+
+        mat-label {
+          display: block;
+          text-align: left;
+        }
+
+        .input-name-form {
+          width: 190px;
+        }
+      }
+    }
+
+    .button-section {
+      margin-top: 80px;
+
+      button {
+        border-color: rgb(152, 88, 183);
+        margin: 0px 5vw;
+      }
+    }
+
+  }
+}
+
+  .error-message{
+    margin: auto;
+    background: rgb(235, 98, 98);
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: max-content;
+  }
