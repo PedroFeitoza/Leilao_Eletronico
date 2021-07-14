@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BidPageComponent } from './bid-page/bid-page.component';
 import { HomePageComponent } from './home-page/home-page/home-page.component';
-import { OfferProductPageComponent } from './offer-product-page/offer-product-page.component';
+import { OfferProductPageComponent } from './offer-product-page/offer-product/offer-product-page.component';
 
 
 const routes: Routes = [

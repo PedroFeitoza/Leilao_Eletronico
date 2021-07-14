@@ -1,0 +1,47 @@
+<div class="container">
+  <nav class="md-toolbar-tools">
+    <h1 class="md-flex">O que deseja ofertar?</h1>
+  </nav>
+  <article class="content-article">
+    <div></div>
+    <section class="form-section">
+      <form class="example-form">
+        <mat-label>Nome do produto</mat-label>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <input matInput placeholder="Nome">
+        </mat-form-field>
+
+        <mat-label>Descrição do produto</mat-label>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <textarea matInput class="textarea-form" placeholder="Descrição..." maxlength="200"></textarea>
+        </mat-form-field>
+
+        <mat-label>Valor inicial</mat-label>
+        <mat-form-field class="example-full-width" appearance="fill">
+          <input matInput placeholder="Valor em Reais(R$)">
+        </mat-form-field>
+
+        <mat-label>Data de encerramento</mat-label>
+        <mat-form-field class="example-full-width last-input" appearance="fill">
+          <input matInput placeholder="Ex. Pizza" type="date" pattern="\d{1,2}/\d{1,2}/\d{4}">
+        </mat-form-field>
+
+        <div class="button-section">
+
+            <button mat-stroked-button color="primary"><a href="/">Cancelar</a></button>
+
+          <a href="/bids">
+            <button mat-stroked-button color="primary" type="submit">Salvar Oferta</button>
+          </a>
+        </div>
+      </form>
+
+    </section>
+
+
+  </article>
+</div>
+
+
+<button mat-stroked-button color="accent">Primary</button>
+<button mat-stroked-button color="primary">Primary2</button>

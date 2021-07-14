@@ -1,0 +1,128 @@
+.container {
+  max-width: 1980px;
+  width: 100vw;
+  height: 100vh;
+  align-items: flex-start;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 150px;
+
+  nav {
+    h1 {
+      font-weight: 500;
+      font-size: 3vw;
+      margin-bottom: 5vh;
+    }
+  }
+
+  .content-article {
+    margin-right: 20px;
+    margin-top: 20px;
+    .form-section {
+      .name-form {
+        display: flex;
+        flex-flow: column;
+        flex-direction: column;
+        min-width: 150px;
+        max-width: 500px;
+        width: 100%;
+        align-items: center;
+
+        mat-label {
+          display: block;
+          text-align: left;
+        }
+
+        .input-name-form {
+          width: 190px;
+        }
+      }
+    }
+
+    .button-section {
+      margin-top: 80px;
+      width: max-content;
+      button {
+        border-color: rgb(152, 88, 183);
+        border-radius: 10px;
+        font-size: 15px;
+        margin: 0px 5px;
+        padding: 15px 25px;
+
+
+        a{
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+
+  }
+}
+
+  .error-message{
+    margin: auto;
+    background: rgb(235, 98, 98);
+    border: solid 1px red;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: max-content;
+  }
+
+
+.example-form {
+  //min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.example-full-width {
+  width: 100%;
+}
+.textarea-form{
+
+  max-height: 200px;
+}
+
+@media(min-width: 1001px) {
+  .container {
+    nav{
+      h1{
+        //font-size: 6vw;
+      }
+    }
+
+    .last-input{
+
+    }
+    .content-article{
+    .form-section{
+      .example-form{
+        .button-section {
+          position: relative;
+          left: 600px;
+          bottom: 180px;
+
+          button {
+            border-color: rgb(152, 88, 183);
+            margin: 0px 5px;
+          }
+        }
+      }
+    }
+    }
+
+  }
+}
+
+@media(max-width: 1000px){
+  .container{
+    nav{
+      h1{
+        font-size: 7vw;
+      }
+    }
+  }
+}
