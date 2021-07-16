@@ -1,0 +1,75 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 60%;
+
+  nav {
+    h1 {
+      font-weight: 600;
+      font-size: 5vw;
+    }
+  }
+
+  table {
+
+    margin-top: 50px;
+    width: 100%;
+    border: solid 1px rgb(209, 209, 209);
+
+
+
+.mat-column-newBid{
+      //background-color: yellow;
+      width: max-content;
+    }
+    th{
+      padding: 20px;
+      border: solid 1px rgb(209, 209, 209);
+      font-size: 1.5vw;
+      }
+
+    td{
+      border: solid 1px rgb(209, 209, 209);
+      .form-table{
+        //background-color: red;
+        //width: max-content;
+        margin-bottom: 10px;
+      }
+
+    }
+  }
+
+  .mat-form-field-flex ng-tns-c66-0{
+    margin: 10px;
+    height: 500px;
+
+
+  }
+}
+
+
+@media(min-width: 1001px) {
+  .container {
+    nav{
+      h1{
+        font-size: 6vw;
+      }
+    }
+  }
+}
+
+@media(max-width: 1000px){
+  .container{
+    nav{
+      h1{
+        font-size: 9vw;
+      }
+    }
+  }
+}
+

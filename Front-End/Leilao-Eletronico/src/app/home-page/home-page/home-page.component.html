@@ -8,7 +8,7 @@
       <div class="name-form">
         <mat-label>Digite o seu Nome</mat-label>
         <mat-form-field class="input-name-form" appearance="fill">
-          <input ng-model-options="{debounce: 3000}" #name (keyup)="validatorName(name.value)" (blur)="validatorName(name.value)" matInput placeholder="Nome" maxlength="100" required>
+          <input #name (keyup)="validatorName(name.value)" (blur)="validatorName(name.value)" matInput placeholder="Nome" maxlength="100" required>
         </mat-form-field>
       </div>
     </section>
