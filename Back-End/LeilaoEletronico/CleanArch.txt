@@ -1,0 +1,21 @@
+- Api
+-- Controller
+--- ProdutoController.cs
+
+- Application
+-- UseCase
+--- ProdutoUseCase.cs
+
+- Infra
+-- Repos
+--- ProdutoRepositorio.cs
+-- Data
+--- ApplicationDbContext.cs
+
+- Domain/Entities
+-- Produto.cs
+-- Models
+--- ProdutoRequest.cs
+--- ProdutoResponse.cs
+-- AutoMapper
+--- AutoMapperProfile.cs

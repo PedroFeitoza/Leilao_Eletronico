@@ -1,0 +1,14 @@
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Application.deps.json
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Domain.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Infrastructure.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\bin\Debug\netcoreapp3.1\Domain.pdb
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.csproj.AssemblyReference.cache
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfoInputs.cache
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.AssemblyInfo.cs
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.csproj.CoreCompileInputs.cache
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.csproj.CopyComplete
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Application\obj\Debug\netcoreapp3.1\Application.pdb
