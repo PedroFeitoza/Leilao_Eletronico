@@ -10,6 +10,8 @@ import { HomePageModule } from './home-page/home-page.module';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTableModule } from '@angular/material/table';
 import { BidPageModule } from './bid-page/bid-page.module';
+import { ProductService } from './Services/product.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,8 +26,9 @@ import { BidPageModule } from './bid-page/bid-page.module';
     BidPageModule,
     MatFormFieldModule,
     MatButtonModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

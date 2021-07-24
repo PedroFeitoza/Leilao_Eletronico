@@ -8,29 +8,29 @@
       <form>
         <mat-label>Nome do produto</mat-label>
         <mat-form-field class="full-width" appearance="fill">
-          <input id="1" (blur)="isInputNotNull('1')" matInput placeholder="Nome" maxlength="100" required>
+          <input [(ngModel)]="product.productName" name="productName" id="1" (blur)="isInputNotNull('1')" matInput placeholder="Nome" maxlength="100" required>
         </mat-form-field>
 
         <mat-label>Descrição do produto</mat-label>
         <mat-form-field class="full-width" appearance="fill">
-          <textarea id="2" (blur)="isInputNotNull('2')" matInput class="textarea-form" placeholder="Descrição..." maxlength="200" required></textarea>
+          <textarea [(ngModel)]="product.productDescription" name="productDescription" id="2" (blur)="isInputNotNull('2')" matInput class="textarea-form" placeholder="Descrição..." maxlength="200" required></textarea>
         </mat-form-field>
 
         <mat-label>Valor inicial</mat-label>
         <mat-form-field class="full-width" appearance="fill">
-          <input id="3" (blur)="isInputNotNull('3')" matInput placeholder="Valor em Reais(R$)" type="number" maxlength="10">
+          <input [(ngModel)]="product.initialOffer" name="initialOffer"  id="3" (blur)="isInputNotNull('3')" matInput placeholder="Valor em Reais(R$)" type="number" maxlength="10">
         </mat-form-field>
 
         <mat-label>Data de encerramento</mat-label>
         <mat-form-field class="full-width" appearance="fill">
-          <input id="4" #inputData (blur)="formValidator()" matInput type="date">
+          <input [(ngModel)]="product.bidsClosingDate" name="bidsClosingDate" id="4" #inputData (blur)="formValidator()" matInput type="date">
         </mat-form-field>
 
         <div [ngClass] = "(errorType != 0 && errorType != -999) ? 'error-message' : ''">{{ errorMessage }}</div>
 
         <div class="button-section">
             <button mat-stroked-button color="primary" (click)="cancel()">Cancelar</button>
-            <button mat-stroked-button color="primary" type="submit" [disabled]="errorType != 0">Salvar Oferta</button>
+            <button mat-stroked-button color="primary" type="submit" [disabled]="errorType != 0" (click)="onSubmit()">Salvar Oferta</button>
         </div>
 
       </form>
