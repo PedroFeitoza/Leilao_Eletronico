@@ -5,6 +5,7 @@ import { BidPageComponent } from './bid-page/bid-page.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatTableModule,
     MatFormFieldModule,
     MatButtonModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule
   ],
   exports: [
     BidPageComponent

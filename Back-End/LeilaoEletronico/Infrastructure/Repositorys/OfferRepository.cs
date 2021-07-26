@@ -1,6 +1,7 @@
 ﻿using Domain.Models;
 using Infrastructure.Data;
 using Infrastructure.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,22 +19,24 @@ namespace Infrastructure.Repositorys
             _con = con;
         }
 
-        public async Task<List<Offer>> Get()
+        public async Task<List<Offer>> GetAsync()
         {
-            await using (var db = _con) 
+            using (var db = _con)
             {
-                return db.Offers.ToList();
+                return await db.Offers.ToListAsync();
             }
         }
 
-        public async Task Post(Offer model)
+        public async Task PostAsync(Offer model)
         {
-            await using (var db = _con) 
+            using (var db = _con) 
             {
                 var product = await db.Products.FindAsync(model.ProductId);
                 await db.Offers.AddAsync(model);
                 await db.SaveChangesAsync();
             }
         }
+
+      
     }
 }

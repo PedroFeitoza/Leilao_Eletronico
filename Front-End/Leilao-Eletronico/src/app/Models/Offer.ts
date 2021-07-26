@@ -3,4 +3,5 @@ export interface Offer {
   productName: string;
   bid: number;
   responsibleName: string;
+  dateOffer?: Date;
 }

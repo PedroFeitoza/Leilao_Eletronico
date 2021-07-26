@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Domain;
+using Application.Interfaces.Products;
 
 namespace API.Controllers
 {
@@ -13,17 +14,11 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
-        private readonly LeilaoDbContext _con;
-
-        public ProductsController(LeilaoDbContext con)
-        {
-            _con = con;
-        }
-
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAsync([FromServices] IGetProductUseCase useCase)
         {
-            return Ok(_con.Products.ToList());
+            var products = await useCase.Execute();
+            return Ok(products);
         }
 
         [HttpGet("{id}")]
@@ -33,18 +28,11 @@ namespace API.Controllers
         }
         
         [HttpPost]
-        public IActionResult Post([FromBody] ProductInputModel inputModel)
+        public async Task<IActionResult> PostAsync([FromServices] IPostProductUseCase useCase, [FromBody] ProductInputModel inputModel)
         {
-            var product = new Product() {
-                ProductName = inputModel.ProductName,
-                ProductDescription = inputModel.ProductDescription,
-                InitialOffer = inputModel.InitialOffer,
-                BidsClosingDate = inputModel.BidsClosingDate,
-            };
-
-            _con.Products.Add(product);
-            _con.SaveChanges();
-            return Ok(inputModel);
+           var product = await useCase.Execute(inputModel);
+           return Ok(product);
         }
     }
 }
+ 

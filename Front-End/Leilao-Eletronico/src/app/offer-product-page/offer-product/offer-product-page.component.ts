@@ -28,6 +28,7 @@ export class OfferProductPageComponent implements OnInit {
 
   onSubmit() {
     this.product.responsibleName = localStorage.getItem('Name');
+    console.log(this.product)
     this.productService.addProduct(this.product).subscribe(
           (success) => {
             this.product.responsibleName = null;

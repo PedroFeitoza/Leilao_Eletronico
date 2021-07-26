@@ -1,5 +1,6 @@
 ﻿using Application.Interfaces.Offers;
 using Domain.Models;
+using Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,9 +10,15 @@ namespace Application.UseCases.Offers
 {
     public class GetOfferUseCase : IGetOfferUseCase
     {
-        public Task<List<Offer>> Execute()
+        private readonly IOfferRepository _repository;
+
+        public GetOfferUseCase(IOfferRepository repository)
         {
-            throw new NotImplementedException();
+            _repository = repository;
+        }
+        public async Task<List<Offer>> Execute()
+        {
+           return await _repository.GetAsync();
         }
     }
 }

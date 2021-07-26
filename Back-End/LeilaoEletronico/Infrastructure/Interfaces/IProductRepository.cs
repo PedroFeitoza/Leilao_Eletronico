@@ -8,7 +8,10 @@ namespace Infrastructure.Interfaces
 {
     public interface IProductRepository
     {
-        public Task<List<Product>> Get();
-        public Task Post(Product model);
+        public Task<List<Product>> GetAsync();
+        public Task<Product> PostAsync(Product model);
+        public Task<Product> GetByIdAsync(int id);
+        public Product Update(Product model);
+
     }
 }

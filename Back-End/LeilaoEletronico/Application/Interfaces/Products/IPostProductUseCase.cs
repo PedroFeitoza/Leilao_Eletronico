@@ -1,4 +1,5 @@
-﻿using Domain.Models.InputModels;
+﻿using Domain;
+using Domain.Models.InputModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Application.Interfaces.Products
 {
     public interface IPostProductUseCase
     {
-        public Task Execute(ProductInputModel model);
+        public Task<Product> Execute(ProductInputModel model);
     }
 }

@@ -7,6 +7,10 @@ C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\API.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\API.pdb
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\API.xml
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
@@ -21,6 +25,8 @@ C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\MySqlConnector.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Pomelo.EntityFrameworkCore.MySql.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
@@ -32,8 +38,8 @@ C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Domain.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Application.pdb
-C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Domain.pdb
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.csproj.AssemblyReference.cache
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.AssemblyInfoInputs.cache
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.AssemblyInfo.cs
@@ -49,3 +55,5 @@ C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.xml
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.pdb
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\obj\Debug\netcoreapp3.1\API.genruntimeconfig.cache
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\API\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll

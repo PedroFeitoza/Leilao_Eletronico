@@ -1,6 +1,7 @@
 using Application;
 using Application.Interfaces.Offers;
 using Application.Interfaces.Products;
+using Application.Profiles;
 using Application.UseCases;
 using Application.UseCases.Offers;
 using Infrastructure;
@@ -38,7 +39,15 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //looping error
             services.AddControllers();
+            /*
+            .AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );*/
+
+            //CORs
+            services.AddCors();
 
             //Conexao BD
             var connectionString = Configuration.GetConnectionString("LeilaoEletronicoCs");
@@ -54,6 +63,9 @@ namespace API
             services.AddTransient<IPostOfferUseCase, PostOfferUseCase>();
             services.AddTransient<IGetProductUseCase, GetProductUseCase>();
             services.AddTransient<IPostProductUseCase, PostProductUseCase>();
+
+            //AutoMapper
+            services.AddAutoMapper(typeof(ProductProfile));
 
             //Swagger
             services.AddSwaggerGen(c =>
@@ -101,6 +113,18 @@ namespace API
                     c.RoutePrefix = string.Empty;
                 });
             }
+
+            //CORS
+            app.UseCors(
+                builder =>
+                {
+                    builder
+                        .AllowCredentials()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                        // .SetIsOriginAllowed((host) => true);
+                        .SetIsOriginAllowed(isOriginAllowed: _ => true);
+                });
 
             app.UseHttpsRedirection();
 

@@ -1,5 +1,9 @@
 ﻿using Application.Interfaces.Offers;
+using AutoMapper;
+using Domain;
+using Domain.Models;
 using Domain.Models.InputModels;
+using Infrastructure.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -9,9 +13,29 @@ namespace Application.UseCases.Offers
 {
     public class PostOfferUseCase : IPostOfferUseCase
     {
-        public Task Execute(BidInputModel model)
+        private IOfferRepository _offerRepository;
+        private IProductRepository _productRepository;
+        private readonly IMapper _mapper;
+
+        public PostOfferUseCase(IProductRepository productRepository, IOfferRepository offerRepository, IMapper mapper)
         {
-            throw new NotImplementedException();
+            _productRepository = productRepository;
+            _offerRepository = offerRepository;
+            _mapper = mapper;
+        }
+        public async Task<Offer> Execute(OfferInputModel inputModel)
+        {
+            var offer = _mapper.Map<Offer>(inputModel);
+            offer.ProductId = inputModel.ProductId;
+
+            var product = await _productRepository.GetByIdAsync(inputModel.ProductId);
+            offer.DateOffer = DateTime.Now;
+            if (product != null)
+            {
+                await _offerRepository.PostAsync(offer);
+                return offer;
+            }
+            return null;
         }
     }
 }

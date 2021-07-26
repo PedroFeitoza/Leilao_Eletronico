@@ -1,4 +1,5 @@
-﻿using Domain.Models.InputModels;
+﻿using Domain.Models;
+using Domain.Models.InputModels;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Application.Interfaces.Offers
 {
     public interface IPostOfferUseCase
     {
-        public Task Execute(BidInputModel model);
+        public Task<Offer> Execute(OfferInputModel model);
     }
 }

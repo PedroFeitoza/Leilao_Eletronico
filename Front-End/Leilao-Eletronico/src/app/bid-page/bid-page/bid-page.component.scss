@@ -22,19 +22,35 @@
     border: solid 1px rgb(209, 209, 209);
 
 
-
+   .width{
+     background-color: aqua;
+     width: 200px;
+     min-width: 80px;
+     max-width: 200px;
+     text-align: center;
+     padding: 0px;
+    }
 .mat-column-newBid{
       //background-color: yellow;
       width: max-content;
     }
+
+
     th{
       padding: 20px;
       border: solid 1px rgb(209, 209, 209);
-      font-size: 1.5vw;
-      }
+      font-size: 1vw;
+
+
+    }
+    th.mat-header-cell {
+      text-align: center;
+      padding: 5px;
+  }
 
     td{
       border: solid 1px rgb(209, 209, 209);
+      font-size: 9px;
       .form-table{
         //background-color: red;
         //width: max-content;
@@ -47,8 +63,6 @@
   .mat-form-field-flex ng-tns-c66-0{
     margin: 10px;
     height: 500px;
-
-
   }
 }
 

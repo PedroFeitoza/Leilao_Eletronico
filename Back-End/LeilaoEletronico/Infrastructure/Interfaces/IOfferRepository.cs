@@ -9,7 +9,7 @@ namespace Infrastructure.Interfaces
 {
     public interface IOfferRepository
     {
-        public Task<List<Offer>> Get();
-        public Task Post(Offer model);
+        public Task<List<Offer>> GetAsync();
+        public Task PostAsync(Offer model);
     }
 }

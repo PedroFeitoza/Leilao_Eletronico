@@ -1,4 +1,6 @@
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.deps.json
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.json
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.runtimeconfig.dev.json
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Infrastructure.pdb
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\bin\Debug\netcoreapp3.1\Domain.dll
@@ -10,3 +12,4 @@ C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Inf
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.csproj.CopyComplete
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.dll
 C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.pdb
+C:\Users\T-Gamer\Documents\Github\LeilaoEletronico\Back-End\LeilaoEletronico\Infrastructure\obj\Debug\netcoreapp3.1\Infrastructure.genruntimeconfig.cache

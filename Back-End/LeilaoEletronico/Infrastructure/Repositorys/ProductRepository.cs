@@ -1,6 +1,7 @@
 ﻿using Domain;
 using Infrastructure.Data;
 using Infrastructure.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,20 +18,41 @@ namespace Infrastructure
             _con = con;
         }
 
-        public async Task<List<Product>> Get()
+        public async Task<List<Product>> GetAsync()
         {
-            await using (var db = _con) 
+            using (var db = _con) 
             {
-                return db.Products.ToList();
+                var result = await db.Products.Include(o => o.Bids).ToListAsync();  //ToListAsync();
+                return result;
             }
         }
 
-        public async Task Post(Product model)
+        public async Task<Product> GetByIdAsync(int id)
         {
-            await using (var db = _con) 
+            using (var db = _con)
+            {
+                var result = await db.Products.SingleOrDefaultAsync(i => i.Id == id);
+                return result;
+            }
+        }
+
+        public Product Update(Product model)
+        {
+            using (var db = _con)
+            {
+                db.Products.Update(model);
+                db.SaveChangesAsync();
+                return model;
+            }
+        }
+
+        public async Task<Product> PostAsync(Product model)
+        {
+            using (var db = _con) 
             {
                 await db.Products.AddAsync(model);
                 await db.SaveChangesAsync();
+                return model;
             }
         }
     }

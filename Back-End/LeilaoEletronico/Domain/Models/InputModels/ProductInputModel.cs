@@ -5,6 +5,7 @@ namespace Domain.Models.InputModels
     public class ProductInputModel
     {
         //[JsonPropertyName("productName")]
+        public string ResponsibleName{ get; set; }
         public string ProductName { get; set; }
 
         //[JsonPropertyName("productDescription")]

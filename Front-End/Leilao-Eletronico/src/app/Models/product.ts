@@ -9,4 +9,6 @@ export interface Product {
   bidsClosingDate: Date | null;
   bids: [Offer] | [];
   lastBidValue?: number;
+  lastBidDate?: Date | string;
+  lastBidResponsible?: string;
 }
