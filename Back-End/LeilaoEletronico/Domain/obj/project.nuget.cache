@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "F0p1h0I9FlQOw9P0Li/71oRchsLvAKOksQK+3IjzOKBl3DHB3Uqp6WJpDxRPxu72Pf573e5iTSgELvPnFiUmVQ==",
+  "dgSpecHash": "G0HDWShhDJZ/wezg5qxIHS2dyMjerxcIGFYv+Ht1tCbVOlknm4KvhJ/Z+6EeGQgUpY+KSH6l559YrRVTwDIu7w==",
   "success": true,
   "projectFilePath": "C:\\Users\\T-Gamer\\Documents\\Github\\LeilaoEletronico\\Back-End\\LeilaoEletronico\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\T-Gamer\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

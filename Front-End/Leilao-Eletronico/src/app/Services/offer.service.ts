@@ -13,10 +13,9 @@ export class OfferService {
 constructor(private http: HttpClient) { }
 
 addOffer(offer: InputOffer): Observable<InputOffer>{
-  return this.http.post<InputOffer>(this.baseUrl, offer).pipe(
-    map(obj => obj),
-    catchError(e => this.errorHandler(e))
-  );
+  console.log('SERVIÇO');
+  console.log(offer);
+  return this.http.post<InputOffer>(this.baseUrl, offer);
 }
 
 errorHandler(e: any): Observable<any> {

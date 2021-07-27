@@ -1,5 +1,5 @@
 export interface InputOffer {
-  id?: number | null;
+  productId?: number | null;
   responsibleName?: string | null;
   bid?: number | null;
 }

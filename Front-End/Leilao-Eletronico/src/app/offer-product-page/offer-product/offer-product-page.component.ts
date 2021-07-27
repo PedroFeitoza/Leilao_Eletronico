@@ -36,7 +36,7 @@ export class OfferProductPageComponent implements OnInit {
             this.product.productDescription = null;
             this.product.initialOffer = null;
             this.product.bidsClosingDate = null;
-            this.router.navigateByUrl('/');
+           // this.router.navigateByUrl('/');
           },
           (error) => console.log(error),
           () => console.log('request completo')

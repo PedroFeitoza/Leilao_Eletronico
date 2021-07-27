@@ -79,13 +79,13 @@ export class BidPageComponent implements OnInit{
     let BidResponsible = localStorage.getItem('Name');
     let newBid = Number.parseFloat(container.value);
     let offer: InputOffer = {
-      id: productId,
+      productId: productId,
       responsibleName: BidResponsible,
       bid: bid
     }
 
-    console.log(offer);
-    console.log(JSON.stringify(offer));
+    //console.log(offer);
+    //console.log(JSON.stringify(offer));
 
     this.offerService.addOffer(offer).pipe(delay(0))
     .subscribe((success) =>{
