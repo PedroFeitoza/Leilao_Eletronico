@@ -3,5 +3,5 @@ export interface Offer {
   productName: string;
   bid: number;
   responsibleName: string;
-  dateOffer?: Date;
+  dateOffer: Date | string;
 }

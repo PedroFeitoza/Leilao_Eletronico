@@ -8,12 +8,9 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./home-page.component.scss']
 })
 
-export class HomePageComponent implements OnInit {
+export class HomePageComponent {
 
   constructor(private router: Router) { }
-
-  ngOnInit(): void
-  {}
 
   private name: string = '';
   public isNameValid: boolean = false;

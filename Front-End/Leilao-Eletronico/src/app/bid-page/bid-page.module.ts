@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import {MatTableModule} from '@angular/material/table';
 import { BidPageComponent } from './bid-page/bid-page.component';
 import { MatInputModule } from '@angular/material/input';
@@ -16,10 +16,14 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatButtonModule,
     MatInputModule,
-    FormsModule
+    FormsModule,
+
   ],
   exports: [
     BidPageComponent
+  ],
+  providers: [
+    DatePipe
   ]
 })
 export class BidPageModule { }

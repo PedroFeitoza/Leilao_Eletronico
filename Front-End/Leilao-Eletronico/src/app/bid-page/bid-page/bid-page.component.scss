@@ -1,3 +1,19 @@
+.logo {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  position: relative;
+  top: 30px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+a:hover{
+  background-color: rgb(51, 50, 50);
+  color: white;
+}
 .container {
   width: 100vw;
   height: 100vh;
@@ -23,7 +39,6 @@
 
 
    .width{
-     background-color: aqua;
      width: 200px;
      min-width: 80px;
      max-width: 200px;
@@ -40,8 +55,7 @@
       padding: 20px;
       border: solid 1px rgb(209, 209, 209);
       font-size: 1vw;
-
-
+      font-weight: 400px;
     }
     th.mat-header-cell {
       text-align: center;
@@ -52,8 +66,6 @@
       border: solid 1px rgb(209, 209, 209);
       font-size: 9px;
       .form-table{
-        //background-color: red;
-        //width: max-content;
         margin-bottom: 10px;
       }
 

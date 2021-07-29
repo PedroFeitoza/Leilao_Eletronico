@@ -1,14 +1,14 @@
 import { Offer } from "./Offer";
 
 export interface Product {
-  id?: number | null;
-  responsibleName: string | null;
-  productName: string | null;
-  productDescription: string | null;
-  initialOffer: number | null;
-  bidsClosingDate: Date | null;
+  id?: number;
+  responsibleName: string;
+  productName: string;
+  productDescription: string;
+  initialOffer: number;
+  bidsClosingDate: Date | string;
   bids: [Offer] | [];
-  lastBidValue?: number;
-  lastBidDate?: Date | string;
-  lastBidResponsible?: string;
+  lastBidValue: number;
+  lastBidDate: Date | string;
+  lastBidResponsible: string;
 }
