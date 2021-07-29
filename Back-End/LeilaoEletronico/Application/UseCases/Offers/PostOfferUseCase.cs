@@ -1,12 +1,9 @@
 ﻿using Application.Interfaces.Offers;
 using AutoMapper;
-using Domain;
 using Domain.Models;
 using Domain.Models.InputModels;
 using Infrastructure.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.UseCases.Offers
@@ -29,9 +26,13 @@ namespace Application.UseCases.Offers
             offer.ProductId = inputModel.ProductId;
 
             var product = await _productRepository.GetByIdAsync(inputModel.ProductId);
-            offer.DateOffer = DateTime.Now;
+            offer.DateOffer = DateTime.Now; 
+
             if (product != null)
             {
+                if (product.BidsClosingDate < offer.DateOffer)
+                    return null;
+
                 await _offerRepository.PostAsync(offer);
                 return offer;
             }

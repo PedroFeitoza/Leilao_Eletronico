@@ -4,5 +4,53 @@
         <name>API</name>
     </assembly>
     <members>
+        <member name="M:API.Controllers.OffersController.GetAsync(Application.Interfaces.Offers.IGetOfferUseCase)">
+            <summary>
+            retrieve all bids
+            </summary>
+            <returns>list of bids made</returns>
+            <response code="200">successfully retrieved bid list</response>
+        </member>
+        <member name="M:API.Controllers.OffersController.PostAsync(Application.Interfaces.Offers.IPostOfferUseCase,Domain.Models.InputModels.OfferInputModel)">
+            <summary>
+            register a new bid
+            </summary>
+            <remarks>
+            Sample request: 
+            {
+            "productId ": 1,
+            "responsibleName ": "John",
+            "bid": 100,
+            }
+            </remarks> 
+            <param name="inputModel"></param>
+            <returns>Newly created object</returns>
+            <response code="200">Object with bid registration data</response>
+        </member>
+        <member name="M:API.Controllers.ProductsController.GetAsync(Application.Interfaces.Products.IGetProductUseCase)">
+            <summary>
+            retrieve all products
+            </summary>
+            <returns>list of products made</returns>
+            <response code="200">successfully retrieved products list</response>
+        </member>
+        <member name="M:API.Controllers.ProductsController.PostAsync(Application.Interfaces.Products.IPostProductUseCase,Domain.Models.InputModels.ProductInputModel)">
+             <summary>
+             register a new bid
+             </summary>
+             <remarks>
+             Sample request: 
+            {
+            "responsibleName": "Pedro",
+            "productName": "Computer",
+            "productDescription": "a gamer computer, to play games :)",
+            "initialOffer": 99000.99,
+            "bidsClosingDate": "2021-07-29T13:59:05.475Z"
+            }
+             </remarks> 
+             <param name="inputModel"></param>
+             <returns>Newly created object</returns>
+             <response code="200">Object with product registration data</response>
+        </member>
     </members>
 </doc>

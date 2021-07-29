@@ -4,8 +4,6 @@ using Domain;
 using Domain.Models.InputModels;
 using Infrastructure.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Application.UseCases
@@ -22,6 +20,9 @@ namespace Application.UseCases
         }
         public async Task<Product> Execute(ProductInputModel inputModel)
         {
+            if (inputModel.BidsClosingDate < DateTime.Now)
+                return null;
+
             var product = _mapper.Map<Product>(inputModel);
             var repoProduct = await _repository.PostAsync(product);
             return repoProduct;

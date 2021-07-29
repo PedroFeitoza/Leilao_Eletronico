@@ -1,7 +1,5 @@
 ﻿using Domain;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Infrastructure.Interfaces
@@ -12,6 +10,5 @@ namespace Infrastructure.Interfaces
         public Task<Product> PostAsync(Product model);
         public Task<Product> GetByIdAsync(int id);
         public Product Update(Product model);
-
     }
 }

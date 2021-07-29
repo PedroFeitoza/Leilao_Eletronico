@@ -1,11 +1,6 @@
-﻿using Infrastructure.Data;
-using Domain.Models.InputModels;
+﻿using Domain.Models.InputModels;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
-using Domain;
 using Application.Interfaces.Products;
 
 namespace API.Controllers
@@ -14,6 +9,12 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class ProductsController : ControllerBase
     {
+        // api/products HTTP Get
+        /// <summary>
+        /// retrieve all products
+        /// </summary>
+        /// <returns>list of products made</returns>
+        /// <response code="200">successfully retrieved products list</response>
         [HttpGet]
         public async Task<IActionResult> GetAsync([FromServices] IGetProductUseCase useCase)
         {
@@ -21,18 +22,28 @@ namespace API.Controllers
             return Ok(products);
         }
 
-        [HttpGet("{id}")]
-        public IActionResult GetById(int id)
-        {
-           return Ok();
-        }
-        
+        // api/users HTTP POST
+        /// <summary>
+        /// register a new bid
+        /// </summary>
+        /// <remarks>
+        /// Sample request: 
+        ///{
+        ///"responsibleName": "Pedro",
+        ///"productName": "Computer",
+        ///"productDescription": "a gamer computer, to play games :)",
+        ///"initialOffer": 99000.99,
+        ///"bidsClosingDate": "2021-07-29T13:59:05.475Z"
+        ///}
+        /// </remarks> 
+        /// <param name="inputModel"></param>
+        /// <returns>Newly created object</returns>
+        /// <response code="200">Object with product registration data</response>
         [HttpPost]
         public async Task<IActionResult> PostAsync([FromServices] IPostProductUseCase useCase, [FromBody] ProductInputModel inputModel)
         {
-           var product = await useCase.Execute(inputModel);
-           return Ok(product);
+            var product = await useCase.Execute(inputModel);
+            return Ok(product);
         }
     }
 }
- 
